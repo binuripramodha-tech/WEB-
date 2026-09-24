@@ -1,0 +1,104 @@
+<html>
+    <head>
+        <title>Student Registraion Form</title>
+
+        <style>
+            /* Form එක මැදට ගෙන ඒමට සහ Gray Background එක ලබා දීමට CSS */
+            form {
+                background-color: #d3d3d3; /* Form එක වටේට Gray පාට */
+                width: 500px;              /* Form එකේ පළල */
+                margin: 30px auto;         /* Form එක පිටුවේ මැදට ගෙන ඒමට */
+                padding: 25px;             /* ඇතුලතින් ඉඩ ලබා දීමට */
+                border-radius: 4px;        /* දාර මදක් වටකිරීමට */
+                font-family: Arial, sans-serif;
+            }
+
+            /* Input boxes, select සහ textarea වල පෙනුම සකස් කිරීමට */
+            input[type="text"], 
+            input[type="number"], 
+            input[type="email"], 
+            input[type="password"], 
+            select, 
+            textarea {
+                padding: 5px;
+                border: 1px solid #ccc;
+                border-radius: 3px;
+            }
+
+            /* Buttons සදහා styling */
+            button {
+                padding: 6px 15px;
+                border: none;
+                border-radius: 3px;
+                cursor: pointer;
+            }
+        </style>
+
+    </head>
+
+    <body>
+
+        <h1 style="text-align: center; color:blue;">Student Registraion Form</h1>
+
+        <form>
+            <label>Student Name:</label>
+            <input type="text">
+            <br>
+            <br>
+
+            <label>Age:</label>
+            <input type="number">
+            <br>
+            <br>
+
+            <label>Email Address</label>
+            <input type="email">
+            <br>
+            <br>
+
+            <label>Password</label>
+            <input type="password">
+            <br>
+            <br>
+
+            <label>Gender</label>
+            <input type="radio" name="gender">
+            <label>Male</label>
+            <input type="radio" name="gender">
+            <label>Female</label>
+            <br>
+            <br>
+
+            <label>Course</label>
+            <select>
+                <option>Information Technology</option>
+                <option>Computer Science</option>
+                <option>Software Engineering</option>
+                <option>Data Science</option>
+            </select>
+            <br>
+            <br>
+
+            <label>Skills</label>
+            <br>
+            <input type="checkbox">HTML<br>
+            <input type="checkbox">CSS<br>
+            <input type="checkbox">JavaScript<br>
+            <input type="checkbox">Python<br>
+
+            <br>
+            <br>
+
+            <label>Address</label>
+            <br>
+            <textarea rows ="5" cols="40"></textarea>
+            <br>
+            <br>
+
+            <button type="submit" style="background-color: rgb(92, 196, 111);">submit </button>
+            <button type="submit" style="background-color:rgb(216, 212, 212)">Reset</button>
+
+
+
+    </body>
+</html>
